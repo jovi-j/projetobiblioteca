@@ -15,7 +15,20 @@ import biblioteca.models.Livro;
 public class AdicionaLivroLogic implements Logica {
 	@Override
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
-		return "/WEB-INF/jsp/formLivro.jsp";
+		String nome = request.getParameter("nome");
+		String autor = request.getParameter("autor");
+		String secao = request.getParameter("secao");
+		int ano = Integer.parseInt(request.getParameter("ano"));
+		int qtde = Integer.parseInt(request.getParameter("quantidade"));
+		Livro livro = new Livro();
+		livro.setNome(nome);
+		livro.setAutor(autor);
+		livro.setSecao(secao);
+		livro.setAno(ano);
+		livro.setQuantidade(qtde);
+		LivroDAO dao = new LivroDAO();
+		dao.inserir(livro);
+		System.out.println("Adicionando Livro...");
+		return "mvc?logica=ListaLivroLogic";
 	}
 }

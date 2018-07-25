@@ -7,7 +7,8 @@
 </head>
 <body>
 	<h1>Adicionar Livro</h1>
-	<form action="adicionaLivro">
+	<form action="mvc?">
+	<input type="hidden" name="logica" value="AdicionaLivroLogic">
 		<div>
 			<label>Nome: </label> 
 			<input type="text" name="nome">

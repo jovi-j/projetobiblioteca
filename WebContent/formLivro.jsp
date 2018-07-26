@@ -6,19 +6,19 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
-	<h1>Adicionar Livro</h1>
+	<h1 class="form--titulo">Adicionar Livro</h1>
 	<form action="mvc?">
 	<input type="hidden" name="logica" value="AdicionaLivroLogic">
 		<div>
-			<label>Nome: </label> 
+			<label>Nome: </label>
 			<input type="text" name="nome">
 		</div>
 		<div>
-			<label>Autor: </label> 
+			<label>Autor: </label>
 			<input type="text" name="autor">
 		</div>
 		<div>
-			<label>Seção: </label> 
+			<label>SeÃ§Ã£o: </label>
 			<input type="text" name="secao">
 		</div>
 		<div>
@@ -29,14 +29,11 @@
 			<label>Quantidade: </label>
 			<input type="text" name="quantidade">
 		</div>
-		
-		
+
+
 		<div>
 			<button type="submit">Adicionar</button>
 		</div>
 	</form>
 </body>
 </html>
-
-
-

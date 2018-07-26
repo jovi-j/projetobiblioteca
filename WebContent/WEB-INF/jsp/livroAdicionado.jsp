@@ -10,16 +10,16 @@
 <body>
 
 	<div class="livroAdicionado">
-		<h1 class="warning">Livro adicionado com sucesso!</h1>
+		<h1 class="livroAdicionado--titulo">Livro adicionado com sucesso!</h1>
 		<h3>Dados do livro:</h3>
-		<div class="descLivro">
-			<label>Nome:</label><span>${param.nome}</span> 
+		<div class="livroAdicionado--desc box">
+			<label>Nome:</label><span>${param.nome}</span>
 			<label>Autor:</label><span>${param.autor}</span>
-			<label>Seção:</label><span>${param.secao} </span> 
+			<label>Seção:</label><span>${param.secao} </span>
 			<label>Ano:</label><span>${param.ano}</span>
 			<label>Quantidade:</label><span>${param.quantidade}</span>
 		</div>
-		<a href="index.html">Voltar à Página Inicial</a>
+		<a class="button--link" href="index.html">Voltar à Página Inicial</a>
 
 	</div>
 

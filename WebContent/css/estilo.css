@@ -6,43 +6,45 @@ html, body{
 	height: 100%;
 	margin: 0;
 }
+
+div, a, nav, table{
+	line-height: 1.8;
+}
+
 body{
-  background-color: #DBDBDB;
-  color: #22262F; 
+  background-color: #E8F6F7;
+  color: #0B1314;
 }
 
 /* Inicio */
 
-.menuInicial{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  width: 30%;
-  margin: 40vh auto;
-}
-.menuInicial a{
-	padding: 1em 2em;
-	color: inherit;
-  	text-decoration: none;
-  	background-color: #22262F;
-  	height: 3em;
-  	color: #DBDBDB;
+.box{
+	margin: 0 auto;
+	background-color: #E8F6F7;
+	display: flex;
+	box-shadow: 0 0 10px #bbb;
+	border-radius: 5px;
 }
 
-/* Listar Livros */
-
-table, th{
-	padding: 1em;
-	text-align: center;
+.menu-inicial{
+	width: 50em;
+	margin-top: 10em;
+	padding: 5em;
+	justify-content: space-between;
 }
 
-table{
-	margin: 40vh auto;
-	
-	
-}
 
-td{
-	padding: 0.4em;
+.menu-inicial a{
+	text-decoration: none;
+}
+.menu-inicial__titulo{
+	padding: 0.5em 0.8em;
+}
+.link-button{
+	background-color: #E0F3F5;
+	color: #0B1314;
+	padding: 0.5em 0.8em;
+	box-shadow: 2px 2px 2px #bbb;
+	border-radius: 5px;
+
 }
